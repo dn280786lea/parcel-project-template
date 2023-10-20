@@ -58,26 +58,23 @@ function createExerciseMarkup(data) {
     } = data;
 
     return `<div class='exercise-wrap' data-id='${_id}'>
-        <h2 class='exercise-list__title'>${name}</h2>
             <img class='exercise-list__img'
               src='${gifUrl}'
               alt='foto'
               loading='lazy'
-            />
-    <div class="rating" >
-        <div class="rating_body">
-        <div class="rating_active"></div>    
-        <div class="rating_items"></div>     
-</div>  
-    <div class="rating_value" >rating: ${rating}</div>  
-    </div>
-        <p>bodyPart: ${bodyPart}</p>
-        <p>equipment: ${equipment}</p>
-        <p>target: ${target}</p>
-        <p>description: ${description}</p>
-        <p>burnedCalories: ${burnedCalories}</p>
-        <p>popularity: ${popularity}</p>
-        <p>description:${description}</p>
+            />   </div>
+   <h2 class='exercise-list__title'>${name}</h2>
+    <div class="rating_value" >rating: ${rating}</div>   
+    <div class="start" >
+    <ul class="start-body-rate">
+        <li class ="start-body">target:<span> ${target}</span></li>
+        <li class ="start-body">bodyPart: <span>${bodyPart}</span></li>
+        <li class ="start-body">equipment: <span>${equipment}</span></li>
+        <li class ="start-body">popularity:<span> ${popularity}</span></li>
+        </ul>
+        <li class ="start-body">burnedCalories: ${burnedCalories}</li>
+        </div> 
+        <p class="description">description:${description}</p>
     </div>`;
   }
   
