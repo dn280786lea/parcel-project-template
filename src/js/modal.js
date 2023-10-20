@@ -72,7 +72,7 @@ function createExerciseMarkup(data) {
         <li class ="start-body">equipment: <span>${equipment}</span></li>
         <li class ="start-body">popularity:<span> ${popularity}</span></li>
         </ul>
-        <li class ="start-body">burnedCalories: ${burnedCalories}</li>
+        <li class ="start-calories">burnedCalories:<span> ${burnedCalories}</span></li>
         </div> 
         <p class="description">description:${description}</p>
     </div>`;
