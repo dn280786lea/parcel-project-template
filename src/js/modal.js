@@ -64,7 +64,8 @@ function createExerciseMarkup(data) {
               loading='lazy'
             />   </div>
    <h2 class='exercise-list__title'>${name}</h2>
-    <div class="rating_value" >rating: ${rating}</div>   
+    <div class="rating_value" >rating: ${rating}</div> 
+    <div class="line"></div> 
     <div class="start" >
     <ul class="start-body-rate">
         <li class ="start-body">target:<span> ${target}</span></li>
@@ -74,6 +75,7 @@ function createExerciseMarkup(data) {
         </ul>
         <li class ="start-calories">burnedCalories:<span> ${burnedCalories}</span></li>
         </div> 
+         <div class="line-bottom"></div>
         <p class="description">description:${description}</p>
     </div>`;
   }
